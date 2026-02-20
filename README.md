@@ -41,6 +41,7 @@ Overlay creates new spatial units that did not previously exist because it depen
 In terms of classification, it is considered part of the analysis process when determining the fragments of land use types within the lots or parcels. Therefore, it simply means to make and idenfitication through the intersected spatial geometries' data from the attribute table. But, classification is sensitive to silver geometries or topology errors due to the spatial operation process or the intersection of geometries but if the geometries are not aligned or not with the same CRS. Gaps and/or overlaps will exist in the results.
 
 Discussing further on the results, the dominance threshold alter spatial patterns based on the observed tabular results. It focused on the limit of a specific polygon characteristic/feature - 60%-100% Residential Zones within a lot/parcel. This makes a cluster or a group to a specific preference based on the goal or objective presentation. 
+
 -----------------------------------------------
 
 ## Challenge 
