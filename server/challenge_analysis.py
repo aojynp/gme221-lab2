@@ -78,7 +78,7 @@ dominant_res = dominant_res.to_crs(epsg=4326)
 
 #GeoJSON
 dominant_res.to_file( 
-"output/challenge_result)_3_1000.geojson", 
+"output/challenge_result_3_1000.geojson", 
 driver="GeoJSON" 
 ) 
 print("GeoJSON saved successfully.")
