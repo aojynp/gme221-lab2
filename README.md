@@ -38,14 +38,14 @@ CRS transformation is necessary before area computation because it  indicates th
 
 Overlay creates new spatial units that did not previously exist because it depends on the area of land use within a lot or parcel. This is the result of the intersection. Overlay serves as the spatial geometry presentation to compute the area and percentages.
 
-In terms of classification, it is considered part of the analysis process when determining the fragments of land use types within the lots or parcels. Therefore, it simply means to make and idenfitication through the intersected spatial geometries' data from the attribute table. But, classification is sensitive to silver geometries or topology errors due to the spatial operation process or the intersection of geometries but if the geometries are not aligned or not with the same CRS. Gaps and/or overlaps will exist in the results.
+In terms of classification, it is considered part of the analysis process when determining the fragments of land use types within the lots or parcels. Therefore, it simply means to make identification through the intersected spatial geometries' data from the attribute table. Classification is sensitive to silver geometries or topology errors due to the spatial operation process or the intersection of geometries, but if the geometries are not aligned or not with the same CRS. Gaps and/or overlaps will exist in the results.
 
 Discussing further on the results, the dominance threshold alter spatial patterns based on the observed tabular results. It focused on the limit of a specific polygon characteristic/feature - 60%-100% Residential Zones within a lot/parcel. This makes a cluster or a group to a specific preference based on the goal or objective presentation. 
 
 -----------------------------------------------
 
 ## Challenge 
-For the challenge portion, i chose the number 3, where the geoJSON must have only less than 30 percent residential zone with a minimum threshold of 100 and 1000 square meters. I followed the script guide within the laboratory instructions but added and altered midway to get the land use total area. This calculation of area determines what is to remain and not base on the threshold.
+For the challenge portion, I chose the number 3, where the geoJSON must have only less than 30 percent residential zone with a minimum threshold of 100 and 1000 square meters. I followed the script guide within the laboratory instructions but added and altered midway to get the land use total area. This calculation of area determines what is to remain and not base on the threshold.
 
 In the generated script, it connects to the PostGIS database and performs a spatial analysis to examine how residential land use is distributed within parcels. The script retrieves parcel and land use polygons from the database and loads them into GeoPandas. Similar to the laboratory exercise, the data are then reprojected to a coordinate system suitable for accurately measuring area in square meters (EPSG:3395). The total area of each parcel is calculated, and the parcel layer is overlaid with the land use layer to determine how much of each parcel is occupied by specific land use types.
 
